@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+  /* colors */
+  --gunmetal: rgb(30, 38, 46);
+  --space-cadet: rgb(57, 52, 86);
+  --mountbatten-pink: rgb(148, 126, 160);
+  --cultured: rgb(248, 247, 249);
+  /* border */
+  --border: 5px solid var(--mountbatten-pink);
+  /* shadow */
+  --shadow: 3px 3px rgba(30, 38, 46, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--space-cadet);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--gunmetal);
+  width: 100%;
+  height: 70px;
+  border-bottom: var(--border);
+}
+
+#logo {
+  margin-left: 25px;
+  max-width: 250px;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  font-size: 1.25rem;
+  font-family: monospace;
+}
+
+#menu a {
+  color: var(--cultured);
+  text-decoration: none;
+}
+
+#menu a:active {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+#menu a:hover {
+  color: var(--mountbatten-pink);
+}
+
+.menu-item {
+  margin: 15px;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1556244573-c3686c0f0e78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80);
+  border-bottom: var(--border);
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 100%;
+  background-color: rgba(30, 38, 46, 0.6);
+  padding: 50px;
+}
+
+.hero-wrapper p {
+  font-size: 3rem;
+  color: var(--cultured);
+  text-align: center;
+  max-width: 70%;
+  text-shadow: var(--shadow);
+  margin-bottom: 50px;
+}
+
+#resume-btn {
+  background-color: var(--space-cadet);
+  color: var(--cultured);
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  border: 2px solid var(--cultured);
+  box-shadow: var(--shadow);
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 100px;
+  padding: 50px;
+  background-color: rgba(248, 247, 249, 0.9);
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+}
+
+h3 {
+  padding-bottom: 7px;
+  font-family: monospace;
+  font-size: 1.75rem;
+}
+
+hr {
+  border-color: var(--mountbatten-pink);
+  width: 150px;
+  opacity: 0.4;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bio {
+  display: flex;
+  align-items: center;
+}
+
+#bio img {
+  border-radius: 999px;
+  max-width: 150px;
+}
+
+#bio p {
+  margin-left: 30px;
+}
